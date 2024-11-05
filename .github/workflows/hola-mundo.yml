@@ -4,9 +4,15 @@ on:
   workflow_dispatch:
   # schedule:
   #  - cron: "*/5 * * * *" # se ejecuta cada 5 minutos
-  # push:
-  #   branches:
-  #     - main
+  #  - cron: "0 1 * * *" # se ejecutará a las 1 de la madrugada
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# este es un comentario
 
 jobs:
   saludar:
